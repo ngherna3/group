@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Office number:</strong>
+  <%= @office.office_number %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @office.location %>
+</p>
+
+<p>
+  <strong>Professor:</strong>
+  <%= @office.professor.name %>
+</p>
+
+<%= link_to 'Edit', edit_office_path(@office) %> |
+<%= link_to 'Back', offices_path %>
